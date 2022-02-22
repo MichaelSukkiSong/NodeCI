@@ -63,4 +63,4 @@ function mapStateToProps(state) {
   return { formValues: state.form.blogForm.values };
 }
 
-export default connect(mapStateToProps, actions)(BlogFormReview);
+export default connect(mapStateToProps, actions)(withRouter(BlogFormReview));
